@@ -1,0 +1,13 @@
+name: Manual Run
+
+on: workflow_dispatch
+
+jobs:
+
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: leopangan/checkout@v2.3.5-alpha
+        with:
+          sparse-checkout-patterns: test-dir
+      - run: ls -R
