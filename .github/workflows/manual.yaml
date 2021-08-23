@@ -9,5 +9,5 @@ jobs:
     steps:
       - uses: leopangan/checkout@v2.3.5-alpha
         with:
-          sparse-checkout-patterns: test-dir
+          sparse-checkout-patterns: dir-b dir-c
       - run: ls -R
